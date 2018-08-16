@@ -14,6 +14,7 @@
 
 	<bean id="app" class="com.yet.spring.core.App">
 		<constructor-arg ref="client" />
+		<constructor-arg ref="cacheFileEventLogger" />
 		<constructor-arg>
 			<map>
 				<entry key= "INFO" value-ref="consoleEventLogger" />

@@ -41,7 +41,8 @@ public class App {
         if (eventLogger == null){
             eventLogger = this.eventLogger;
         }
-       eventLogger.logEvent(event);
+        event.setMsg(this.client.getFullName());
+        eventLogger.logEvent(event);
     }
 
 }
